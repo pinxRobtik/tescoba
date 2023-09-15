@@ -10,3 +10,6 @@ MagicProject Userbot Based On Python Pyrogram
 <h3 align="center">Click The Button</h3>
 <a href="https://heroku.com/deploy?template=https://github.com/Team-Pesulap/MagicProject"><img src="https://www.herokucdn.com/deploy/button.svg"></a>
 </div>
+
+
+![Open Source Love](https://github.com/Team-Pesulap/MagicProject)
