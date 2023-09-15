@@ -23,7 +23,7 @@ async def get_target(client, query):
         "group": [ChatType.GROUP, ChatType.SUPERGROUP],
         "users": [ChatType.PRIVATE],
     }
-    async for dialog in client.iter_dialogs():
+    async for dialog in client.get_dialogs():
         if dialog.chat.type in chat_types[query]:
             chats.append(dialog.chat.id)
     return chats
