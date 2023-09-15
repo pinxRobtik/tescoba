@@ -6,7 +6,7 @@ from pyrogram.errors.exceptions.flood_420 import FloodWait
 
 from Magic import *
 from Magic.plugins import *
-from config import BLACKLIST_CHAT
+from config import *
 
 
 def extract_argument(message: Message):
@@ -28,7 +28,7 @@ async def get_target(client, query):
             chats.append(dialog.chat.id)
     return chats
 
-@ubot.on_message(filters.command(["gcast"], ".") & filters.me)
+@ubot.on_message(filters.command("gcast", prefix) & filters.me)
 async def global_broadcast(client: Client, message: Message):
     if message.reply_to_message or extract_argument(message):
         msg = message.reply_to_message
