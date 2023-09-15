@@ -24,3 +24,8 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
 # License
 [![License](https://www.gnu.org/graphics/agplv3-155x51.png)](LICENSE)   
 Team-Pesulap is licensed under [GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.en.html) v3 or later.
+
+
+## Info & Support 
+  
+ Follow Channel @PesulapTelegram untuk info Update bot Bisa Gabung Ke @PesulapTelegram untuk untuk bertanya atau pelaporan bug, dan bantuan tentang userbot
