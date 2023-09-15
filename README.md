@@ -1,6 +1,16 @@
 # MagicProject
 MagicProject Userbot Based On Python Pyrogram
 
+## Disclaimer
+
+```
+Kami tidak bertanggung jawab atas penyalahgunaan bot ini.
+Bot ini dimaksudkan untuk bersenang-senang sekaligus membantu anda
+mengelola grup secara efisien dan mengotomatiskan beberapa hal yang membosankan.
+Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak.
+```
+
+
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/Team-Pesulap/MagicProject)
 
 <p align="center">
