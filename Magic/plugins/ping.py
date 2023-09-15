@@ -10,3 +10,8 @@ async def pinx(client: Client, message: Message):
     berhenti = datetime.now()
     durasi = (end - start).microseconds / 1000
     await message.reply_text(f"**Sepong!**\n" f"`%sms`" % (durasi))
+
+
+@Client.on_message(filters.command(["woi"], ".") & filters.me)
+async def test(client: Client, message: Message):
+    await message.reply_text("asu")
