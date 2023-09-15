@@ -18,4 +18,4 @@ DB_URL = os.environ.get("DATABASE_URL", None)
 HEROKU_API = os.environ.get("HEROKU_API", None)
 HEROKU_NAME = os.environ.get("HEROKU_NAME", None)
 REPO_URL = os.environ.get("REPO_URL", "https://github.com/Team-Pesulap/MagicProject")
-prefix = "+", "."
+prefix = "."
