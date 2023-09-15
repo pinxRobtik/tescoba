@@ -2,6 +2,7 @@ from asyncio import get_event_loop_policy
 from pyrogram.errors import RPCError
 from pyrogram.methods.utilities.idle import idle
 from Magic import *
+from Magic.plugins import *
 
 async def done():
     try:
@@ -21,7 +22,8 @@ async def main():
             await ubot.start()
             client_id = (await ubot.get_me()).id
             print(f"Client ID: {client_id} Berhasil Diaktifkan")
-        
+            
+        await loadPlugins()
         await done()
         await idle()
     except Exception as e:
