@@ -1,13 +1,15 @@
-<img src="https://telegra.ph//file/9396551dec6ad110359de.jpg">
-
+<h1 align="center">MagicProject</h1>
+<p align="center">
+  <img src="https://telegra.ph//file/9396551dec6ad110359de.jpg">
 </p>
 
 
 
-# MagicProject
 MagicProject Is A Userbot Writen In Python And Based On Pyrogram, With The Cool Modules 🔥
 
 [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/Team-Pesulap/MagicProject)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green?&style=flat-square)](https://GitHub.com/Team-Pesulap/MagicProject/graphs/commit-activity)
+[![GitHub license](https://img.shields.io/github/license/Team-Pesulap/MagicProject?&style=flat-square&logo=github)](https://github.com/Team-Pesulap/MagicProject/blob/magic/LICENSE)
     <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-black.svg?style=flat-square&logo=python&logoColor=blue&color=red" /></a>
     
 ## Disclaimer
