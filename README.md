@@ -1,18 +1,25 @@
 # MagicProject
-MagicProject Userbot Based On Python Pyrogram
+MagicProject Is A Userbot Writen In Python And Based On Pyrogram, With The Cool Modules 🔥
 
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/Team-Pesulap/MagicProject)
+    <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-black.svg?style=flat-square&logo=python&logoColor=blue&color=red" /></a>
+    
 ## Disclaimer
 
+• Indonesia [🇲🇨]
 ```
 Kami tidak bertanggung jawab atas penyalahgunaan bot ini.
 Bot ini dimaksudkan untuk bersenang-senang sekaligus membantu anda
 mengelola grup secara efisien dan mengotomatiskan beberapa hal yang membosankan.
 Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak.
 ```
-
-
-[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/Team-Pesulap/MagicProject)
-    <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-black.svg?style=flat-square&logo=python&logoColor=blue&color=red" /></a>
+• English [🇺🇸]
+```
+We are not responsible for anything that happend to your account and
+any violation using this bots. This bot is intended for the purpose of having fun
+with some fun commands and group management with some helpfull commands.
+Please use with your own risk and use it wisely.
+```
 
 
 ## Heroku Deploy!
@@ -32,4 +39,6 @@ Team-Pesulap is licensed under [GNU Affero General Public License](https://www.g
 
 
 # Credits 
- * [![Team-Pesulap](https://img.shields.io/static/v1?label=Teampesulap&message=devs&color=critical)](https://t.me/PesulapTelegram)
+Credits For Everyone Who Helping Us In This Project ❤️
+ 
+ • [![Team-Pesulap](https://img.shields.io/static/v1?label=Team-Pesulap&message=devs&color=critical)](https://t.me/PesulapTelegram)
