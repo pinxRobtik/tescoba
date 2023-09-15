@@ -2,6 +2,8 @@ import logging
 from aiohttp import ClientSession
 from config import *
 from pyrogram import *
+
+
 aiosession = ClientSession()
 
 bot = Client(
@@ -15,7 +17,6 @@ ubot = Client(
   name="ubot",
   api_id=API_ID,
   api_hash=API_HASH,
-  bot_token=BOT_TOKEN,
   session_string=SESSION,
   device_model="MagicProject",
 )
