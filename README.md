@@ -28,3 +28,8 @@ Untuk info Update bot Bisa Gabung Ke  [Pesulap-Telegram](https://t.me/PesulapTel
 # License
 [![License](https://www.gnu.org/graphics/agplv3-155x51.png)](LICENSE)   
 Team-Pesulap is licensed under [GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.en.html) v3 or later.
+
+
+
+# Credits 
+ * [![Team-Pesulap](https://img.shields.io/static/v1?label=Teampesulap&message=devs&color=critical)](https://t.me/PesulapTelegram)
