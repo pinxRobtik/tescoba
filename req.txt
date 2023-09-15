@@ -1,5 +1,5 @@
 pyrogram
-pillow==9.0.0
+pillow
 aiohttp
 asyncio
 bs4
