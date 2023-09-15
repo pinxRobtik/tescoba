@@ -1,4 +1,4 @@
-from pyrogram import Client
+from pyrogram import Client, Message
 from datetime import datetime
 from Magic import *
 from Magic.plugins import *
