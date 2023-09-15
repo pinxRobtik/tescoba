@@ -1,5 +1,8 @@
 import logging
+import sys
+
 from aiohttp import ClientSession
+
 from config import *
 from pyrogram import *
 
