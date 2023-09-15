@@ -23,7 +23,7 @@ async def main():
             client_id = (await ubot.get_me()).id
             print(f"Client ID: {client_id} Berhasil Diaktifkan")
             
-        await loadPlugins()
+        loadPlugins()
         await done()
         await idle()
     except Exception as e:
