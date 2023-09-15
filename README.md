@@ -12,4 +12,3 @@ MagicProject Userbot Based On Python Pyrogram
 </div>
 
 
-![Open Source Love](https://github.com/Team-Pesulap/MagicProject)
