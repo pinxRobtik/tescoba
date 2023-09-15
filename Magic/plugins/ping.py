@@ -13,6 +13,6 @@ async def pinx(client: Client, message: Message):
     await message.reply_text(f"**Sepong!**\n" f"`%sms`" % (durasi))
 
 
-@Client.on_message(filters.command(["woi"], ".") & filters.me)
+@ubot.on_message(filters.command("woi", prefix) & filters.me)
 async def test(client: Client, message: Message):
     await message.reply_text("asu")
