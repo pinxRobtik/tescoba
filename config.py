@@ -4,10 +4,10 @@ from dotenv import load_dotenv
 
 load_dotenv(".env")
 
-API_ID = int(os.environ.get("API_ID", ""))
-API_HASH = os.environ.get("API_HASH", "")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-SESSION = os.environ.get("SESSION", "")
+API_ID = int(os.environ.get("API_ID",))
+API_HASH = os.environ.get("API_HASH",)
+BOT_TOKEN = os.environ.get("BOT_TOKEN",)
+SESSION = os.environ.get("SESSION",)
 SUDOERS = list(map(int, os.environ.get("SUDOERS", "").split()))
 BLACKLIST_CHAT = os.environ.get("BLACKLIST_CHAT", None)
 if not BLACKLIST_CHAT:
