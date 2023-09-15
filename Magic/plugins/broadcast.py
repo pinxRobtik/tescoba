@@ -35,7 +35,7 @@ async def global_broadcast(client: Client, message: Message):
         ea = extract_argument(message)
         amg = await message.reply("`Globally Broadcasting...`")
     else:
-        return await message.edit_text("`Please reply or leave a message.`")
+        return await message.reply("`Please reply or leave a message.`")
     berhasil = 0
     gagal = 0
     target = await get_target(client, "group")
