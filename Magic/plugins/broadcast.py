@@ -28,7 +28,7 @@ async def get_target(client, query):
             chats.append(dialog.chat.id)
     return chats
 
-@ubot.on_message(filters.command(["ping"], ".") & filters.me)
+@ubot.on_message(filters.command(["gcast"], ".") & filters.me)
 async def global_broadcast(client: Client, message: Message):
     if message.reply_to_message or extract_argument(message):
         msg = message.reply_to_message
