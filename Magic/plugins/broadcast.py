@@ -1,6 +1,7 @@
 import asyncio
 from pyrogram import Client, filters
-from pyrogram.types import Message, ChatType
+from pyrogram.types import Message
+from pyrogram.enums import ChatType
 from pyrogram.errors.exceptions.flood_420 import FloodWait
 
 from Magic import *
