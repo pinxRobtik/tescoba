@@ -1,6 +1,7 @@
 from pyrogram import Client
 from datetime import datetime
 from Magic import *
+from Magic.plugins import *
 from config import *
 
 @Client.on_message(filters.command("ping", prefix) & filters.me)
