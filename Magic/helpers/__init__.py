@@ -1,1 +1,1 @@
-from disortir import *
+from .disortir import *
