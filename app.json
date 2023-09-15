@@ -1,12 +1,37 @@
 {
-    "name": "Ubot intinya",
+    "name": "Ubot",
     "keywords": ["telegram", "userbot", "pyrogram"],
     "repository": "https://github.com/Team-Pesulap/MagicProject",
     "stack": "container",
     "env": {
-        "API_ID": {
-            "description": "api id tau kan?",
+        "SESSION": {
+            "description": "Isi String Pyrogram V2 Ambil Di @AmangRobot",
             "required": true
+        },
+        "API_ID": {
+            "description": "API_ID Lu Tau kan ?",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "API_HASH Tau kan ?",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "fill with your bot token get from @BotFather on telegram",
+            "required": true,
+            "value": ""
+        },
+        "HEROKU_API_KEY": {
+            "description": "Ambil Heroku Api Key Dipengaturan Heroku",
+            "required": true,
+            "value": "Isi"
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Heroku APP name",
+            "required": true,
+            "value": "Isi Mas"
+        }
+    },
     "buildpacks": [
         {
           "url": "heroku/python"
