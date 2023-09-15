@@ -5,7 +5,7 @@
     "stack": "container",
     "env": {
         "SESSION": {
-            "description": "Isi String Pyrogram V2 Ambil Di @AmangRobot",
+            "description": "Isi String Pyrogram V2 Ambil Di mana aja",
             "required": true
         },
         "API_ID": {
