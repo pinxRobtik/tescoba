@@ -1,24 +1,12 @@
 {
-  "name": "Magic",
-  "description": "[Magic Project Userbot] Intinya ini userbot.",
-  "stack": "heroku-22",
-  "env": {
-    "API_ID": {
-      "description": "Api Id tau kan?",
-      "required": true
-  },
-  "buildpacks": [
-    {
-      "url": "heroku/python"
-    },
-    {
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-    }
-  ],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "eco"
-    }
-  }
+    "env": {
+        "API_ID": {
+            "description": "",
+            "required": true
+        },
+    "buildpacks": [
+        {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"},
+        {"url": "https://github.com/subinps/heroku-buildpack-nodejs"},
+        {"url": "heroku/python"}
+    ]
 }
