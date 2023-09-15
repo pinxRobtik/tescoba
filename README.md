@@ -22,7 +22,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan userbot ini dengan bijak
 
 ## Info & Support 
   
-Untuk info Update bot Bisa Gabung Ke  [Pesulap-Telegram](https://t.me/PesulapTelegram) untuk untuk bertanya atau pelaporan bug, dan bantuan tentang userbot
+Untuk info Update bot Bisa Gabung Ke  [Pesulap-Telegram](https://t.me/PesulapTelegram) untuk bertanya-tanya tentang seputar update atau pelaporan bug, dan bantuan tentang userbot
 
 
 # License
