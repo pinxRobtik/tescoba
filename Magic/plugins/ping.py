@@ -9,7 +9,7 @@ from config import *
 async def pinx(client: Client, message: Message):
     mulai = datetime.now()
     berhenti = datetime.now()
-    durasi = (end - start).microseconds / 1000
+    durasi = (berhenti - mulai).microseconds / 1000
     await message.reply_text(f"**Sepong!**\n" f"`%sms`" % (durasi))
 
 
