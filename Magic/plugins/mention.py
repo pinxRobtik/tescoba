@@ -100,7 +100,7 @@ async def mentionall(client: Client, message: Message):
          "💋", 
   ]
     async for usr in client.get_chat_members(chat_id):
-        if not chat_id in spam_chats:
+        if not chat.id in spam_chats:
             break
       usrnum += 1
       emote = random.choice(emoji)
