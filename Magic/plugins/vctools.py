@@ -28,7 +28,7 @@ async def get_group_call(
     await message.edit(f"**No group call Found** {err_msg}")
     return False
 
-@ubot.on_message(filters.command(["joinvc"], "") & filters.me)
+@ubot.on_message(filters.command(["joinvc"], ".") & filters.me)
 async def jvc(client: Client, message: Message):
     chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
     mmk = await message.edit("Joining....")
