@@ -8,7 +8,24 @@ from pyrogram import Client, filters
 from pyrogram.errors import RPCError
 from pyrogram.types import *
 from Magic import *
+from . import *
 
+def get_args(message: Message):
+    try:
+        message = message.text
+    except AttributeError:
+        pass
+    if not message:
+        return False
+    message = message.split(maxsplit=1)
+    if len(message) <= 1:
+        return []
+    message = message[1]
+    try:
+        split = shlex.split(message)
+    except ValueError:
+        return message
+    return list(filter(lambda x: len(x) > 0, split))
 
 @ubot.on_message(filters.command("copy", ".") & filters.me)
 async def copy(client, message):
