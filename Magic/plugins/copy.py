@@ -85,10 +85,5 @@ async def copy(client, message):
         await client.send_document(message.chat.id, xdoc, laras)
         await message.delete()
         os.remove(xdoc)
-    if bkp.gif:
-        xgif = await client.download_media(bkp)
-        await client.send_gif(message.chat.id, xgif, laras)
-        await message.delete()
-        os.remove(xgif)
     else:
         await message.edit("Failed to downloading the content.....")
