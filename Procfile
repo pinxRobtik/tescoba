@@ -1,1 +1,1 @@
-worker: python3 -m Magic
+magic: python3 -m Magic
