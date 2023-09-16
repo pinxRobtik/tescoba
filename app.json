@@ -41,7 +41,7 @@
         }
     ],
     "formation": {
-        "worker": {
+        "magic": {
           "quantity": 1,
           "size": "basic"
         }
