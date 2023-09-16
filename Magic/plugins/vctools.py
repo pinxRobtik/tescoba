@@ -10,6 +10,7 @@ from pyrogram.raw.functions.phone import CreateGroupCall, DiscardGroupCall
 from pyrogram.raw.types import InputGroupCall, InputPeerChannel, InputPeerChat
 from pyrogram.types import Message
 from Magic.helpers import *
+from Magic import *
 from . import *
 
 async def get_group_call(
@@ -28,7 +29,7 @@ async def get_group_call(
     await message.edit(f"**No group call Found** {err_msg}")
     return False
 
-@ubot.on_message(filters.command(["joinvc"], ".") & filters.me)
+@ubot.on_message(filters.command("joinvc", prefix) & filters.me)
 async def jvc(client: Client, message: Message):
     chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
     mmk = await message.edit("Joining....")
@@ -41,4 +42,20 @@ async def jvc(client: Client, message: Message):
         await client.group_call.set_is_mute(True)
     except Exception as f:
         return await mmk.edit(f"ERROR: {f}")
-        
+
+
+
+  @ubot.on_message(filters.command("leavevc", prefix) & filters.me)
+async def leavevc(clien, message):
+    chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
+    mmk = await message.edit("`Leaving....`")
+    with suppress(ValueError):
+        chat_id = int(chat_id)
+    try:
+        await client.group_call.leave()
+    except Exception as f:
+        return await edit_or_reply(message, f"**ERROR:** `{f}`")
+    msg = "**Successfully leave the Voice Chat**\n**"
+    if chat_id:
+        msg += f"\n└ **Chat ID:** `{chat_id}`"
+    await mmk.edit(msg)      
