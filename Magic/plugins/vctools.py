@@ -11,6 +11,7 @@ from pyrogram.raw.types import InputGroupCall, InputPeerChannel, InputPeerChat
 from pyrogram.types import Message
 from Magic.helpers import *
 from Magic import *
+from config import *
 from . import *
 
 async def get_group_call(
