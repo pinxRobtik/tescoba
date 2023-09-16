@@ -1,10 +1,24 @@
+#TeamPesulap
+#kyaa><
+
+
+import random
 from asyncio import sleep
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
 from config import *
 from Magic import *
-from Magic.helpers import *
+
+
+
+def get_arg(message: Message):
+    msg = message.text
+    msg = msg.replace(" ", "", 1) if msg[1] == " " else msg
+    split = msg[1:].replace("\n", " \n").split(" ")
+    if " ".join(split[1:]).strip() == "":
+        return ""
+    return " ".join(split[1:])
 
 spam_chats = []
 
@@ -12,9 +26,9 @@ spam_chats = []
 async def mentionall(client: Client, message: Message):
     await message.delete()
     chat_id = message.chat.id
-    reply = message.reply_to_message.text
+    rep = message.reply_to_message
     args = get_arg(message)
-    if not direp and not args:
+    if not rep and not args:
         return await message.reply("`Berikan saya pesan atau balas ke pesan !`")
 
     spam_chats.append(chat_id)
@@ -91,20 +105,20 @@ async def mentionall(client: Client, message: Message):
          "💋", 
   ]
     async for usr in client.get_chat_members(chat_id):
-        if not message.chat.id in spam_chats:
+        if not chat_id in spam_chats:
             break
-      usrnum += 1
-      emote = random.choice(emoji)
-      txt += f"[{emote}](tg://user?id={usr.user.id}), "
-      if usrnum == 5:
-          if args:
-                tx = f"{args}\n\n{txt}"
-                await client.send_message(chat_id, tx)
-          elif reply:
-                await reply.reply(txt)
-            await sleep(2)
-            usrnum = 0
-            tx = ""
+        usrnum += 1
+        emote = random.choice(emoji)
+        txt += f"[{emote}](tg://user?id={usr.user.id}), "
+        if usrnum == 5:
+           if args:
+               tx = f"{args}\n\n{txt}"
+               await client.send_message(chat_id, tx)
+           elif rep:
+               await rep.reply(txt)
+           await sleep(2)
+           usrnum = 0
+           txt = ""
     try:
         spam_chats.remove(chat_id)
     except:
