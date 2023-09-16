@@ -31,13 +31,13 @@ async def get_group_call(
     return False
 
 @ubot.on_message(filters.command("joinvc", prefix) & filters.me)
-async def jvc(client: Client, message: Message):
+async def joinvc(client: Client, message: Message):
     chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
     mmk = await message.edit("Joining....")
     with suppress(ValueError):
         chat_id = int(chat_id)
     try:
-        await client.group_call.join(chat_id)
+        await client.join_group_call(chat_id)
         await mmk.edit(f"**Successful joined the Voice Chat**\n└ **Chat ID**: {chat_id}")
         await asyncio.sleep(5)
         await client.group_call.set_is_mute(True)
@@ -47,7 +47,7 @@ async def jvc(client: Client, message: Message):
 
 
 @ubot.on_message(filters.command("leavevc", prefix) & filters.me)
-async def leavevc(clien, message):
+async def leavevc(client, message):
     chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
     mmk = await message.edit("`Leaving....`")
     with suppress(ValueError):
