@@ -121,12 +121,12 @@ async def mentionall(client: Client, message: Message):
 
 
 @ubot.on_message(filters.command("cancel", prefix) & filters.me)
-async def cancel_spam(client: Client, message: Message):
+async def cancel_spam(client, message):
     if not message.chat.id in spam_chats:
-      return await message.edit("`Tidak ada mention disini!`")
+        return await message.reply("`Tidak ada mention disini!.`")
     else:
         try:
             spam_chats.remove(message.chat.id)
         except:
             pass
-      return await message.edit("`Memberhentikan Mention.`")
+        return await message.reply("`Memberhentikan Mention.`")
