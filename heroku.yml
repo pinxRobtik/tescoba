@@ -1,5 +1,5 @@
 build:
   docker:
-      worker: Dockerfile
+      magic: Dockerfile
 run:
-  worker: bash start
+  magic: bash start
