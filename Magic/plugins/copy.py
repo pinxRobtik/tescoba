@@ -8,6 +8,7 @@ from pyrogram import Client, filters
 from pyrogram.errors import RPCError
 from pyrogram.types import *
 from Magic import *
+from config import *
 from Magic.helpers import *
 from . import *
 
