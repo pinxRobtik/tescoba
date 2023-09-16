@@ -4,6 +4,7 @@ from pyrogram.types import Message
 
 from config import *
 from Magic import *
+from Magic.helpers import *
 
 
 
