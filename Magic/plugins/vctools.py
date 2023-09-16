@@ -46,7 +46,7 @@ async def jvc(client: Client, message: Message):
 
 
 
-  @ubot.on_message(filters.command("leavevc", prefix) & filters.me)
+@ubot.on_message(filters.command("leavevc", prefix) & filters.me)
 async def leavevc(clien, message):
     chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
     mmk = await message.edit("`Leaving....`")
