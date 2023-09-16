@@ -18,13 +18,13 @@ def get_arg(message: Message):
 spam_chats = []
 
 @ubot.on_message(filters.command("mention", prefix) & filters.me)
-async def mentionanu(client: Client, message: Message):
- await message.delete()
+async def mentionall(client: Client, message: Message):
+    await message.delete()
     chat_id = message.chat.id
-    reply = message.reply_to_message
+    reply = message.reply_to_message.text
     args = get_arg(message)
-    if not reply and not args:
-        return await message.edit("`Berikan sebuah pesan untuk melakukan mention`")
+    if not direp and not args:
+        return await message.reply("`Berikan saya pesan atau balas ke pesan !`")
 
     spam_chats.append(chat_id)
     usrnum = 0
