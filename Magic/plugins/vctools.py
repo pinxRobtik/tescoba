@@ -9,7 +9,7 @@ from pyrogram.raw.functions.messages import GetFullChat
 from pyrogram.raw.functions.phone import CreateGroupCall, DiscardGroupCall
 from pyrogram.raw.types import InputGroupCall, InputPeerChannel, InputPeerChat
 from pyrogram.types import Message
-
+from Magic.helpers import *
 from . import *
 
 async def get_group_call(
@@ -27,3 +27,18 @@ async def get_group_call(
             return full_chat.call
     await message.edit(f"**No group call Found** {err_msg}")
     return False
+
+@ubot.on_message(filters.command(["joinvc"], "") & filters.me)
+async def jvc(client: Client, message: Message):
+    chat_id = message.command[1] if len(message.command) > 1 else message.chat.id
+    mmk = await message.edit("Joining....")
+    with suppress(ValueError):
+        chat_id = int(chat_id)
+    try:
+        await client.group_call.join(chat_id)
+        await mmk.edit(f"**Successful joined the Voice Chat**\n└ **Chat ID**: {chat_id}")
+        await asyncio.sleep(5)
+        await client.group_call.set_is_mute(True)
+    except Exception as f:
+        return await mmk.edit(f"ERROR: {f}")
+        
