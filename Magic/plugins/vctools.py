@@ -3,7 +3,7 @@ from contextlib import suppress
 from random import randint
 from typing import Optional
 
-from pyrogram import Client, enums, filters
+from pyrogram import client, enums, filters
 from pyrogram.raw.functions.channels import GetFullChannel
 from pyrogram.raw.functions.messages import GetFullChat
 from pyrogram.raw.functions.phone import CreateGroupCall, DiscardGroupCall
