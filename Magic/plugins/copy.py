@@ -12,7 +12,7 @@ from Magic.helpers import *
 from . import *
 
 
-@ubot.on_message(filters.command("copy", ".") & filters.me)
+@ubot.on_message(filters.command("copy", prefix) & filters.me)
 async def copy(client, message):
     await message.edit("Processing...")
     link = get_arg(message)
