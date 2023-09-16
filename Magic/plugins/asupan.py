@@ -34,7 +34,7 @@ async def bkp_cmd(client: Client, message: Message):
       choice(
               [
                 bkp.video.file_id
-                async for bkp in client.search_messages("bokepuputt", filter=enums.MessagesFilter.VIDEO)
+                async for bkp in client.search_messages("punyapesulap", filter=enums.MessagesFilter.VIDEO)
               ]
             ),
             reply_to_message_id=ReplyCheck(message),
